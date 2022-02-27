@@ -14,18 +14,18 @@ body {
 }
 .menu {
     width: 200px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(34, 34, 34);
     border-radius: 0 10px 10px 0;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     border-left: 0;
     justify-content: space-between;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .gameBoardBox{
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     border-right: 0;
     width: 450px;
     height: 450px;
@@ -156,7 +156,7 @@ h1{
       #30dd8a,
       #2bb673
     );
-    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.4);
   }
 
   .botButton {
@@ -215,7 +215,7 @@ h1{
       #d10000,
       #6d0101
     );
-    box-shadow: 0 4px 15px 0 rgba(155, 0, 0, 0.75);
+    box-shadow: 0 4px 15px 0 rgba(155, 0, 0, 0.4);
   }
 
   .enabled{
@@ -226,5 +226,5 @@ h1{
       #02c002,
       #004b0f
     );
-    box-shadow: 0 4px 15px 0 rgba(13, 110, 0, 0.75);
+    box-shadow: 0 4px 15px 0 rgba(13, 110, 0, 0.4);
   }
