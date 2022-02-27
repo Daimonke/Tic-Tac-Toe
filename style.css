@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100;1,400&display=swap');
+
+
+body {
+    margin: 0;
+}
+#app {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    
+}
+.menu {
+    width: 200px;
+    background-color: rgb(150, 0, 0);
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-left: 0;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.gameBoardBox{
+    border: 1px solid black;
+    border-right: 0;
+    width: 450px;
+    height: 450px;
+    background-color: rgb(202, 202, 202);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+h1{
+    
+    text-align: center;
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+}
+.gameBoardBox div {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.gameBoardBox > div:nth-child(-n+4){
+    border-bottom: 2px solid black;
+}
+.gameBoardBox > div:nth-child(3){
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+.gameBoardBox > div:nth-child(6){
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+.gameBoardBox > div:nth-child(n+8){
+    border-top: 2px solid black;
+}
+.gameBoardBox > div:nth-child(9){
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+.start {
+    width: 70%;
+
+}
+.reset {
+    width: 70%;
+
+}
+.buttonsDiv {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5%;
+    width: 70%;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: black;
+    color: white;
+    transition: 0.5s linear;
+  }
+  
+  .result.active {
+    transition: 0.5s linear;
+    opacity: 1;
+  }
+
+  span {
+      font-size: 6em;
+        opacity: 0;
+        transition: 1s ease;
+  }
+ 
+
+  .resultSpan {
+    font-size: 26px;
+    font-weight: 600;
+      color: white;
+      opacity: 0;
+      transition: 1s ease;
+}
+.visible{
+    opacity: 1;
+    transition: 1s ease;
+}
+
+.btn1 {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 0 20px 0;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .btn1:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .btn1:focus {
+    outline: none;
+  }
+  
+  .btn1.btnRadient{
+    background-image: linear-gradient(
+      to right,
+      #0ba360,
+      #3cba92,
+      #30dd8a,
+      #2bb673
+    );
+    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+  }
+
+  .botButton {
+      width: fit-content;
+    font-family: lato,sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+
+.enabled{
+      background-color: rgb(42, 179, 1);
+  }
