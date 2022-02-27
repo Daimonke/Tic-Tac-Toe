@@ -14,7 +14,7 @@ body {
 }
 .menu {
     width: 200px;
-    background-color: rgb(150, 0, 0);
+    background-color: rgb(0, 0, 0);
     border-radius: 0 10px 10px 0;
     display: flex;
     flex-direction: column;
@@ -89,8 +89,8 @@ h1{
     padding: 15px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     transition: 0.5s linear;
   }
   
@@ -109,7 +109,7 @@ h1{
   .resultSpan {
     font-size: 26px;
     font-weight: 600;
-      color: white;
+      color: rgb(0, 0, 0);
       opacity: 0;
       transition: 1s ease;
 }
@@ -174,6 +174,57 @@ h1{
     cursor: pointer;
   }
 
-.enabled{
-      background-color: rgb(42, 179, 1);
+
+
+
+  .botButton {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 0 20px 0;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .botButton:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .botButton:focus {
+    outline: none;
+  }
+  
+ .botButton{
+    background-image: linear-gradient(
+      to right,
+      #750000,
+      #ff0000,
+      #d10000,
+      #6d0101
+    );
+    box-shadow: 0 4px 15px 0 rgba(155, 0, 0, 0.75);
+  }
+
+  .enabled{
+    background-image: linear-gradient(
+      to right,
+      #1b5f00,
+      #15ff00,
+      #02c002,
+      #004b0f
+    );
+    box-shadow: 0 4px 15px 0 rgba(13, 110, 0, 0.75);
   }

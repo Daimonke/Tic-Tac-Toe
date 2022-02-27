@@ -10,7 +10,6 @@ const Game = () => {
         0, 0, 0,
         0, 0, 0
     ]
-    const getSymbol = () => symbol
     const getWinner = () => {
         for (let i = 0; i <= 8; i += 3) {
             if (gameArray[0 + i] + gameArray[1 + i] + gameArray[2 + i] == symbol + symbol + symbol) winner = symbol, gameOver = true, console.log(`winner is ${winner}`)
@@ -97,7 +96,7 @@ const Game = () => {
     })
 }
     }
-return { startGame, resetGame, botPlay }
+return { startGame, resetGame}
 }
 
 // DOM variables
