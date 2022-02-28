@@ -19,7 +19,9 @@ const Game = () => {
         }
         if (gameArray[0] + gameArray[4] + gameArray[8] == symbol + symbol + symbol) winner = symbol, gameOver = true, console.log(`winner is ${winner}`)
         if (gameArray[2] + gameArray[4] + gameArray[6] == symbol + symbol + symbol) winner = symbol, gameOver = true, console.log(`winner is ${winner}`)
-        if (winner == 'x' || winner == 'o') resultSpan.classList.add('visible'), resultSpan.textContent = `Winner - ${winner}`
+        winner == 'o' ? (resultSpan.classList.add('visible'), resultSpan.textContent = `You won!`)
+        : winner == 'x' ? (resultSpan.classList.add('visible'), resultSpan.textContent = `You lost..`)
+        : null
         if(player1Score.concat(player2Score).length >= 9 && !winner){winner = 'draw', resultSpan.classList.add('visible'), resultSpan.textContent = `Draw.`}
     }
     const resetGame = () => {
